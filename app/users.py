@@ -16,3 +16,10 @@ def get_user(user_id):
     """
 
     return users.get(user_id)
+
+
+def get_user_name(user_id):
+
+    user = get_user(user_id)
+
+    return user["name"]
